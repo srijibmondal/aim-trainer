@@ -1,13 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Document</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div class="top__nav">
+      <div class="hits">Hits : <span id="hits">0</span></div>
+      <div class="accuracy">Accuracy: <span id="accuracy">0%</span></div>
+      <div class="lives">
+        <div class="live"></div>
+        <div class="live"></div>
+        <div class="live"></div>
+      </div>
+    </div>
+    <div class="game__board">
+      <div id="advice">Adjust Difficulty and Aim Size Before Start</div>
+      <button class="btn" id="start">START</button>
+      <h2 class="game__over dn">GameOver</h2>
+      <button class="btn restart dn">RESTART</button>
+      <!-- <div class="circle"></div> -->
+    </div>
+    <div class="bottom__nav">
+      <button class="btn restart dn">RESTART</button>
+      <div class="difficulty">
+        <h2>Difficulty</h2>
+        <button class="btn" id="decrease__difficulty">-</button>
+        <span id="difficulty__number">1</span>
+        <button class="btn" id="increase__difficulty">+</button>
+      </div>
+      <div class="aim__size">
+        <h2>Aim Size</h2>
+        <button class="btn" id="decrease__aim__size">-</button>
+        <span id="aim__size__number">3</span>
+        <button class="btn" id="increase__aim__size">+</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
