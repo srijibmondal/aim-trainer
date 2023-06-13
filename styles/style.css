@@ -117,11 +117,12 @@ body {
   font-family: cursive;
 }
 .top__nav {
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 18px;
+  flex-direction: row-reverse;
 }
 
 .btn {
@@ -146,6 +147,7 @@ body {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  padding: 5px;
 }
 .lives .live {
   height: 20px;
@@ -200,13 +202,18 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
+.game__over{
+  font-size: 50px;
+}
+.over__hits__accuracy{
+  display: flex;
+  gap: 50px;
+  font-size: 25px;
+}
+.over__hits__accuracy span{
+  color: var(--neon-color);
+}
 
 .dn {
   display: none;
 }
-.game__over{
-    font-size: 50px;
-}
-
-
-
